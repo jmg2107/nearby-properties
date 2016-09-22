@@ -14,7 +14,17 @@
     Longitude: <input type='text' ng-model='longitude'>
     <button ng-click='send()'>Find Properties</button>
   </form>
+
+  <ul ng-show="found">
+    <h3>Properties within 20 miles of input: </h3>
+    <li ng-repeat='prop in properties'>{{prop.address}} <br>
+    {{prop.city}} , {{prop.state}} {{prop.zip}}
+    <br>
+    <img ng-src='{{prop.image_url}}'>
+    </li>
+  </ul>
 </div>
+
 
 
 <!-- library dependencies -->

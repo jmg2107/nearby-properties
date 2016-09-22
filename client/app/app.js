@@ -5,6 +5,7 @@ var app = angular.module('nearby',[])
   $scope.longitude = 0;
   $scope.latitude = 0;
   $scope.properties = [];
+  $scope.found = false;
 
   $scope.send = function(){
     var data = {latitude: $scope.latitude, longitude: $scope.longitude};
@@ -17,6 +18,7 @@ var app = angular.module('nearby',[])
     .then(function(result) {
       console.log(result);
       $scope.properties = result.data;
+      $scope.found = true;
     });
   };
 
