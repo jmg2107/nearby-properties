@@ -16,7 +16,6 @@ var app = angular.module('nearby',[])
       data: pack
     })
     .then(function(result) {
-      console.log(result);
       $scope.properties = result.data;
       $scope.found = true;
     });
