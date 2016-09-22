@@ -1,0 +1,28 @@
+{
+  "name": "nearby-properties",
+  "version": "1.0.0",
+  "description": "return list of properties within 20 miles of input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmg2107/nearby-properties.git"
+  },
+  "author": "Jennica Goo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmg2107/nearby-properties/issues"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "homepage": "https://github.com/jmg2107/nearby-properties#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "express": "4.14.0",
+    "geolib": "^2.0.21"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "nearby-properties",
+  "description": "return list of properties within 20 miles of input",
+  "main": "index.js",
+  "authors": [
+    "Jennica Goo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jmg2107/nearby-properties",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}

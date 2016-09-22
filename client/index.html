@@ -1,0 +1,27 @@
+<doctype! html>
+<html>
+<head>
+
+</head>
+
+<body ng-app='nearby'>
+
+<div id="app" ng-controller='TestController'>
+  <h3>Enter Coordinates</h3>
+  <form>
+    Latitude: <input type='text' ng-model='latitude'>
+    <br>
+    Longitude: <input type='text' ng-model='longitude'>
+    <button ng-click='send()'>Find Properties</button>
+  </form>
+</div>
+
+
+<!-- library dependencies -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+
+<!-- app files -->
+  <script src="app/app.js"></script>
+</body>
+</html>
